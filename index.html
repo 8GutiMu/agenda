@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda Telefonica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <nav class="container-fluid indigo accent-3">
+                <div class="col s8 m6">
+                    <div class="row">
+                        <h4>CONTACTOS</h4>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <a class="btn-floating btn-large right indigo darken-4" href="#modal1"><i class="material-icons">add</i></a>
+                </div>
+            </nav>
+
+            <!--
+            <div>
+               <i class="material-icons prefix">search</i> 
+            </div>
+-->
+        </div>
+    </header>
+
+    <section class="container-fluid" id="contador">
+        <div class="row">
+            <div class="col 12">
+                <p>Contactos: <span>0</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="contactos">
+        <div class="card-panel indigo lighten-5">
+            <div class="row">
+                <div class="col s8">
+                    <h6 class="col s10">
+                        <strong>
+                        Brenda Gutierrez Murguía
+                   </strong>
+                    </h6>
+                    <div class="col s10">
+                        <h6>55 2909 2807</h6>
+                    </div>
+                </div>
+
+                <div class="col s2">
+                    <img src="https://dummyimage.com/80/fff/000" alt="" class="circle image-responsive">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <form id="agregarContacto" class="col s12">
+                    <div class="row">
+                        <div class=" col s12">
+                            <span><i class="material-icons prefix">account_circle</i></span>
+                            <input id="nombre" type="text" placeholder="Nombre" class="validate tipografia-size-mobile">
+                        </div>
+                        <div class=" col s12">
+                            <input id="apellidos" type="text" placeholder="apellidos" class="validate tipografia-size-mobile">
+                        </div>
+                        <div class="input-field col s12">
+                            <span><i class="material-icons prefix">phone</i></span><br>
+                            <input id="telephone" type="tel" placeholder="Telefono" class="validate tipografia-size-mobile">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn col s12" type="submit">Agregar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.min.js "></script>
+    <script src="js/materialize.min.js "></script>
+    <script src="js/app.js "></script>
+</body>
+
+</html>
